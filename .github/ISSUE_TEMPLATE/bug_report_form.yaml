@@ -1,0 +1,51 @@
+name: Bug Report
+description: Found a bug? Let's exterminate it!
+title: "Give this bug report a title"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Congratulations! You found a bug and you're going to help us exterminate it. Please fill out this form so we can better understand the problem. The more detailed you are the faster we can turn around a fix.
+  - type: input
+    id: reporter
+    attributes:
+      label: Reporter
+      description: Who should we contact if we need more info?
+      placeholder: i.e. SpaceMan - spaceman@gloveboxapp.com
+    validations:
+      required: true
+  - type: input
+    id: external-ticket
+    attributes:
+      label: External ticket reference
+      description: If you have an external ticket number (i.e. HubSpot) enter it here for reference.
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Please explain what happened and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: replication-steps
+    attributes:
+      label: Replication steps
+      description: Please provide steps to replicate the issue. If you have a video (i.e. Loom) please enter the link here
+    validations:
+      required: true
+  - type: textarea
+    id: affected-devices
+    attributes:
+      label: Affected Device(s) and Operating Systems
+      description: What devices (i.e. iPhone, Android Tablet, Desktop Web) and Operating Systems (i.e. MacOS, Linux, Windows, iOS) are you seeing the issue?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
