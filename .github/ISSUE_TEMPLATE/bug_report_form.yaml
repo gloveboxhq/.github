@@ -1,4 +1,4 @@
-name: Bug Report
+name: Bug Report Form
 description: Found a bug? Let's exterminate it!
 title: "Give this bug report a title"
 labels: ["bug"]
@@ -33,7 +33,7 @@ body:
     id: replication-steps
     attributes:
       label: Replication steps
-      description: Please provide steps to replicate the issue. If you have a video (i.e. Loom) please enter the link here
+      description: Please provide steps to replicate the issue. If you have a video (i.e. Loom) or screenshots please add them here.
     validations:
       required: true
   - type: textarea
@@ -44,8 +44,8 @@ body:
     validations:
       required: true
   - type: textarea
-    id: logs
+    id: additional-context
     attributes:
-      label: Relevant log output
+      label: Additional Context
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
