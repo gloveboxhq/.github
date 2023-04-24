@@ -1,0 +1,45 @@
+name: QA Report Form
+description: Feedback form for QA Team
+title: "Give this QA report a title"
+body:
+  - type: input
+    id: view
+    attributes:
+      label: Affected View
+      description: What view is this feedback for?
+    validations:
+      required: false
+  - type: dropdown
+    id: ui-ux
+    attributes:
+      label: UI/UX
+      description: Select from dropdown below.
+      attributes:
+      multiple: true
+      options:
+        - Copy (ie. grammar, spelling, punctuation.)
+        - Design (ie. color, font, spacing.)
+        - Functionality
+    validations:
+      required: true
+  - type: textarea
+    id: replication-steps
+    attributes:
+      label: Replication steps
+      description: Please provide steps to replicate the issue. If you have a video (i.e. Loom) or screenshots please add them here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: test-flight
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
