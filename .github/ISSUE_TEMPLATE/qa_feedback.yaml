@@ -32,11 +32,11 @@ body:
   - type: checkboxes
     id: test-flight
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Submitted to Test Flight? 
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - label: Yes
+        - label: No
+        required: true
   - type: textarea
     id: additional-context
     attributes:
