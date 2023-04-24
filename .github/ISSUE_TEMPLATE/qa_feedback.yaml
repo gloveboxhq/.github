@@ -36,7 +36,7 @@ body:
       options:
         - label: Yes
         - label: No
-        required: true
+      required: true
   - type: textarea
     id: additional-context
     attributes:
