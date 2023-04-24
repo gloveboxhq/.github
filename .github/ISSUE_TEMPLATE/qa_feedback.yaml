@@ -14,7 +14,6 @@ body:
     attributes:
       label: UI/UX
       description: Select from dropdown below.
-      attributes:
       multiple: true
       options:
         - Copy (ie. grammar, spelling, punctuation.)
@@ -34,9 +33,8 @@ body:
     attributes:
       label: Submitted to Test Flight? 
       options:
-        - label: Yes
-        - label: No
-      required: true
+        - label: 'Yes'
+        - label: 'No'
   - type: textarea
     id: additional-context
     attributes:
