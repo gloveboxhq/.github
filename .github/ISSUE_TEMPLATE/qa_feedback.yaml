@@ -5,14 +5,14 @@ body:
   - type: input
     id: view
     attributes:
-      label: Affected View
+      label: If Client side, what view is this feedback for?
       description: What view is this feedback for?
     validations:
       required: false
   - type: dropdown
     id: ui-ux
     attributes:
-      label: UI/UX
+      label: Category
       description: Select from dropdown below.
       multiple: true
       options:
@@ -31,13 +31,11 @@ body:
   - type: dropdown
     id: test-flight
     attributes:
-      label: Submitted to Test Flight?
+      label: Submitted to Test Flight? (iOS only)
       description: Select from dropdown below.
       options:
         - 'Yes'
         - 'No'
-    validations:
-      required: true
   - type: textarea
     id: additional-context
     attributes:
