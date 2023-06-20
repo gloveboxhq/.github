@@ -1,0 +1,49 @@
+name: Feature Request Form
+description: Feature Request form for Product Team
+title: "Give this Feature Request a title"
+body:
+  - type: dropdown
+    id: choose-platform
+    attributes:
+      label: Platform
+      description: Select from dropdown below.
+      multiple: true
+      options:
+        - PHA-Web
+        - PHA-iOS
+        - PHA-Android
+        - HQ
+        - System
+        - Marketing Website
+    validations:
+      required: true
+  - type: textarea
+    id: problem-solving
+    attributes:
+      label: What Problem are we solving?
+      description: Please provide context to the problem we are solving and how this impacts our stakeholders (i.e. users, clients, etc.)
+    validations:
+      required: true
+  - type: textarea
+    id: user-story
+    attributes:
+      label: Please provide User Story for impacted stakeholders.
+      description: Select from dropdown below.
+      validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Please provide acceptance criteria for this feature request.
+      render: shell
+      validations: 
+      required: true
+    - type: textarea
+      id: edge-cases
+      attributes:
+        label: Considerations & Edge Cases
+        description: Please provide edge cases for this feature request.
+        render: shell
+        validations: 
+        required: true
