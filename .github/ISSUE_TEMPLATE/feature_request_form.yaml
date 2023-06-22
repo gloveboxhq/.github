@@ -2,21 +2,6 @@ name: Feature Request Form
 description: Feature Request form for Product Team
 title: "Give this Feature Request a title"
 body:
-  - type: dropdown
-    id: choose-platform
-    attributes:
-      label: Platform
-      description: Select from dropdown below.
-      multiple: true
-      options:
-        - PHA-Web
-        - PHA-iOS
-        - PHA-Android
-        - HQ
-        - System
-        - Marketing Website
-    validations:
-      required: true
   - type: textarea
     id: problem-solving
     attributes:
@@ -28,7 +13,7 @@ body:
     id: user-story
     attributes:
       label: Please provide User Story for impacted stakeholders.
-      description: Select from dropdown below.
+      description: As a [stakeholder], I want to [do something] so that I can [achieve some goal].
       validations:
       required: true
   - type: textarea
