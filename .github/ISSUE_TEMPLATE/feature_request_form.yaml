@@ -24,11 +24,11 @@ body:
       render: shell
       validations: 
       required: true
-    - type: textarea
-      id: edge-cases
-      attributes:
-        label: Considerations & Edge Cases
-        description: Please provide edge cases for this feature request.
-        render: shell
-        validations: 
-        required: true
+  - type: textarea
+    id: edge-cases
+    attributes:
+      label: Considerations & Edge Cases
+      description: Please provide edge cases for this feature request.
+      render: shell
+      validations: 
+      required: true
