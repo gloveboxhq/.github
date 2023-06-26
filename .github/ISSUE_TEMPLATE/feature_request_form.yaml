@@ -7,28 +7,20 @@ body:
     attributes:
       label: What Problem are we solving?
       description: Please provide context to the problem we are solving and how this impacts our stakeholders (i.e. users, clients, etc.)
-    validations:
-      required: true
   - type: textarea
     id: user-story
     attributes:
       label: Please provide User Story for impacted stakeholders.
       description: As a [stakeholder], I want to [do something] so that I can [achieve some goal].
-      validations:
-      required: true
   - type: textarea
     id: acceptance-criteria
     attributes:
       label: Acceptance Criteria
       description: Please provide acceptance criteria for this feature request.
       render: shell
-      validations: 
-      required: true
   - type: textarea
     id: edge-cases
     attributes:
       label: Considerations & Edge Cases
       description: Please provide edge cases for this feature request.
       render: shell
-      validations: 
-      required: true
