@@ -14,7 +14,8 @@ assignees: ARolek, cosmotek, sethr-gb
 (FILL IN HERE)
 
 **Request Type**:
-- [ ] Product Permissions
+- [ ] Product Permissions (Prod)
+- [ ] Product Permissions (Dev)
 - [ ] Infrastructure Environment Permissions
 
 **Business Justification**:
