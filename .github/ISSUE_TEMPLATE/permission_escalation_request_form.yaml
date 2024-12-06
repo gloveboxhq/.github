@@ -42,7 +42,9 @@ body:
       description: Indicate which application(s) the request is associated with
       options:
       - label: Application (i.e. Glovebox admin)
-      - label: Amazon Web Services
+      - label: AWS - VPN + Console
+      - label: AWS - Grafana
+      - label: AWS - Postgres Read Replica
       - label: GitHub
       - label: Twilio
       - label: Segment
