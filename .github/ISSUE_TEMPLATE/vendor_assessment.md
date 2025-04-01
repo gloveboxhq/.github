@@ -5,6 +5,20 @@ labels: requires-approval
 assignees: arolek-glovebox, sethmoeckel-glovebox
 body:
   - type: textarea
+    id: access_description
+    attributes:
+      label: Describe the level of access this vendor will have to the GloveBox system
+    validations:
+      required: true
+
+  - type: textarea
+    id: soc2_report_link
+    attributes:
+      label: Provide a link to the vendors SOC2 report
+    validations:
+      required: true
+
+  - type: textarea
     id: vendor_name
     attributes:
       label: Specify the vendor name
